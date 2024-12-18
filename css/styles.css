@@ -502,7 +502,7 @@ main {
     align-items: baseline;
 }
 
-.modal-overlay{
+.backdrop{
     position: fixed;
     top: 0;
     left: 0;
@@ -519,7 +519,7 @@ main {
     pointer-events: none;   
 }
 
-.modal-overlay.is-open {
+.backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
 }
