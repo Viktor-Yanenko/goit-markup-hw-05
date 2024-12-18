@@ -30,16 +30,6 @@ img {
     padding: 0 15px;
 }
 
-.page-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex-grow: 1;
-}
-
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -63,8 +53,7 @@ main {
 .navigation {
     display: flex;
     padding-top: 24px;
-    padding-bottom: 24px;
-    
+    padding-bottom: 24px;    
 }
 
 .nav-list {
