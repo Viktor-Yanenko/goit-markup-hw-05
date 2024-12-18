@@ -741,18 +741,17 @@ main {
 }
 
 .subs-email {
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
-    background: transparent;
+    background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 8px 16px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-    margin-right: 24px;    
 }
 
 .subs-email::placeholder {
@@ -763,7 +762,8 @@ main {
 }
 
 .inp-btn {
-    display: inline-flex;
+    display: flex;
+    gap: 24px;
 }
 
 .subs-button {
