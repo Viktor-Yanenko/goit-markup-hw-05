@@ -503,7 +503,7 @@ main {
 }
 
 .modal-overlay{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -513,21 +513,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* opacity: 0;
+    opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-overlay.is-open {
+.modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
-} */
+}
 
 .modal {
     position: relative;
-    display: flex;
-    flex-direction: column;
     border-radius: 4px;
     width: 408px;
     height: 584px;
@@ -603,10 +600,10 @@ main {
     height: 40px;
     padding-left: 38px;
     outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-field:focus-within {
+.modal-field:focus {
     border: 1px solid #4d5ae5;
 }
 
@@ -633,24 +630,27 @@ main {
     width: 360px;
     height: 120px;
     margin-bottom: 16px;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;    
     resize: none;
     outline: transparent;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);    
+    color: rgba(46, 47, 66, 0.4);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+.modal-txt::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
     
-.modal-txt:focus-within {
-        border: 1px solid #4d5ae5;
+.modal-txt:focus {
+    border: 1px solid #4d5ae5;
     }
     
-.modal-chkbox {
-    display: none;
-}
 
 .chk{
     width: 16px;
@@ -662,7 +662,7 @@ main {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: border-color,  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chk-accept {
@@ -671,7 +671,7 @@ main {
 
 .chk-accept:focus-within {
     fill: #404bbf;
-        border: 1px solid #404bbf;
+    border: 1px solid #404bbf;
 }
 
 .modal-chkbox-field {
@@ -724,4 +724,74 @@ main {
 .send-btn:hover,
 .send-btn:focus {
     background-color: #404bbf;
+}
+
+
+.subscribe-cont {
+    margin-left: 80px;
+}
+
+.subs-txt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.subs-email {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background: transparent;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin-right: 24px;    
+}
+
+.subs-email::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.inp-btn {
+    display: inline-flex;
+}
+
+.subs-button {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    background: #4d5ae5;
+    gap: 16px;  
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
+.subs-button:hover,
+.subs-button:focus {
+    background-color: #404bbf;
+}
+
+.icon-send {
+    width: 24px;
+    height: 24px;;
+    fill: #fff;
 }

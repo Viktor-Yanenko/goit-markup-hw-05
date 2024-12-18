@@ -60,7 +60,9 @@
         <section class="section-title">
           <div class="container title">
             <h1 class="header-one">Effective Solutions for Your Business</h1>
-            <button type="button" class="order-btn">Order Service</button>
+            <button type="button" class="order-btn" data-modal-open>
+              Order Service
+            </button>
           </div>
         </section>
         <section class="advantages section">
@@ -442,13 +444,32 @@
               </li>
             </ul>
           </div>
+          <div class="subscribe-cont">
+            <form>
+              <p class="subs-txt">Subscribe</p>
+              <div class="inp-btn">
+                <input
+                  type="email"
+                  name="subs-email"
+                  placeholder="E-mail"
+                  class="subs-email"
+                />
+                <button type="submit" class="subs-button">
+                  Subscribe
+                  <svg width="24" height="20" class="icon-send">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </footer>
     </div>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <form class="modal-form">
-          <button type="button" class="modal-close-btn">
+          <button type="button" class="modal-close-btn" data-modal-close>
             <svg width="8" height="8" class="icon-close">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -515,8 +536,9 @@
           <div class="modal-chkbox-field">
             <input
               type="checkbox"
-              class="modal-chkbox"
+              class="modal-chkbox visually-hidden"
               name="policy"
+              required
               id="policy"
             />
             <label class="modal-label-chkbox" for="policy">
@@ -526,7 +548,7 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" class="modal-link">Privacy Policy</a></label
+              <a href="#" class="modal-link">Privacy Policy</a></label
             >
           </div>
 
@@ -534,5 +556,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
